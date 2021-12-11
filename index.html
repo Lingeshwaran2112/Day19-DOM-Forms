@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+       
+      <h1>FORMS</h1>
+
+    <div class="form-block">
+      <form onsubmit="event.preventDefault(),handlesubmit()">
+            <div class="form-group ">
+                <legend for="firstname" class="col-form-label legend-text">First Name</legend> 
+                <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <legend for="lastname" class="col-form-label legend-text">Last Name</legend> 
+                <input type="text" class="form-control " id="lastname" placeholder="Last Name" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <legend for="address" class="col-form-label legend-text">Address</legend> 
+                <input type="text" class="form-control" id="address" placeholder="Address" required>
+            </div>
+            <br>
+
+            <div class="form-group">
+                <legend for="PINCODE" class="col-form-label legend-text">PINCODE</legend> 
+                <input type="text" class="form-control" id="PINCODE" placeholder="PINCODE" pattern="[0-9]{5}" maxlength="5" required>
+            </div>
+            <br>
+
+            <div class="row">
+            <div class="col-sm-6">
+                    <legend class="col-form-label legend-text">Gender</legend>                  
+            <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Male" required>
+                    <label class="form-check-label" for="gridRadios1">
+                                Male
+                    </label>
+            </div>
+            <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Female" required>
+                    <label class="form-check-label" for="gridRadios2">
+                                Female
+                    </label>
+            </div>
+            </div>
+            </div>
+                <br>
+
+            <div class="row">
+            <div class="col-sm-10">
+                    <legend for="inputfood" class="col-form-label legend-text">Food Options</legend> 
+            
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Food1" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                            FOOD 1
+                    </label>
+            </div>
+            
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Food2" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck1">
+                            FOOD 2
+                    </label>
+            </div>
+            
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Food3" id="defaultCheck3">
+                    <label class="form-check-label" for="defaultCheck1">
+                            FOOD 3
+                    </label>
+            </div>
+                        
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Food4" id="defaultCheck4">
+                    <label class="form-check-label" for="defaultCheck1">
+                            FOOD 4
+                    </label>
+            </div>
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="Food5" id="defaultCheck5">
+                    <label class="form-check-label" for="defaultCheck1">
+                            FOOD 5
+                    </label>
+            </div>
+            </div>
+            </div>
+                    
+            
+                <br>
+            <div class="form-group">
+                    
+                    <legend for="lastname" class="col-form-label legend-text">State</legend> 
+                    <input type="text" class="form-control" id="State" placeholder="State" required>
+            </div>
+                <br>
+
+            <div class="form-group">
+                    <legend for="lastname" class="col-form-label legend-text">Country</legend> 
+                    <input type="text" class="form-control" id="Country" placeholder="Country" required>
+            </div>
+                <br>
+
+            <div class="form-group">
+                    <button class="btn btn-success btn-lg">Submit</button>
+                    <button class="btn btn-warning btn-lg" type="reset" value="Reset">Reset</button>
+            </div>
+    </form>
+            </div>
+      
+
+                    <table class="table table-dark" id="myTable">
+                    <thead class="table-dark">
+            <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Pincode</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Food</th>
+                <th scope="col">State</th>
+                <th scope="col">Country</th>
+                <th>Action</th>
+            </tr>
+</thead>
+<tbody>
+          
+</tbody>
+</table>
+
+                <script src="index.js"></script>
+    
+</body>
+</html>
